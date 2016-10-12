@@ -7,6 +7,7 @@ Below is some bootstrapped HTML and some javascript that will toggle off/on the 
 ![alt text](http://i1295.photobucket.com/albums/b638/b2_franklin/compare%20profile_zpsofujeesa.jpg "Example")
 
 ##HTML
+*for the input fields*
 ```
 <div class="row">
   <div class="col-sm-6 mergeLeft">
@@ -35,6 +36,36 @@ Below is some bootstrapped HTML and some javascript that will toggle off/on the 
           <label for="checkR10"><span class="boldMe">Profile ID:</span>8741328</label>
       </div>
   </div>
+</div>
+```
+
+*for the button that triggers the preview modal*
+```
+<button type="button" onclick="getLabelText()" class="btn btn-primary" data-toggle="modal" data-target="#manualMergeReviewModal">Review &amp; Merge</button>
+```
+
+*for the actual modal that has the container which puts values of the checked checkboxes into it*
+```
+<div class="modal fade" id="manualMergeReviewModal" role="dialog" aria-labelledby="manualMergeReviewModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div id="mergeCompare" class="row">
+
+                        @*this is where the text for the checked labels is being copied for user to review  before submitting*@
+
+                    </div>
+                    <div class="prev">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">I need to make more changes</button>
+                    </div>
+                    <div class="next">
+                        <button type="submit" class="btn btn-primary">Merge!</button>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+    </div>
 </div>
 ```
 
