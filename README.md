@@ -1,5 +1,11 @@
 # side-by-side-compare
 
+Say you want to compare profile information side by side, and then submit the info that is in the checkbox to create a new profile from the two current profiles whose information you chose to keep from each individual profile.
+
+Below is some bootstrapped HTML and some javascript that will toggle off/on the checkbox for the item adjacent to the item clicked. See example below. If you click on/off one of the checkboxes, the other one in the row will toggle accoridngly so only 1 is checked at a time.
+
+![alt text](http://i1295.photobucket.com/albums/b638/b2_franklin/compare%20profile_zpsofujeesa.jpg "Example")
+
 ##HTML
 ```
 <div class="row">
@@ -68,4 +74,26 @@ $('#checkR10').click(function () {
 $('#checkL10').click(function () {
     compareLR(checkL10ID, checkR10ID);
 });
+```
+
+*then, if you want to create a button to popup a modal that displays the info the user has checked before submitting the Merge request, you can do that with this function call on the button click event*
+```
+function getLabelText() {
+    if ($('.mmReviewSingle').length > 0) {
+        $('.mmReviewSingle').remove();
+    }
+    var array = [];    
+    array = $('#manualMerge input:checked').next('label').map(function () {
+        return $(this).text();
+    }).get();
+    
+    var mergeCompare = document.getElementById('mergeCompare');
+    for (var i = 0; i < array.length; i++) {
+        console.log(array[i]);
+        var div = document.createElement('div');
+        div.setAttribute('class', 'mmReviewSingle col-xs-12')
+        div.innerHTML = (array[i]);
+        mergeCompare.appendChild(div);
+    }    
+};
 ```
