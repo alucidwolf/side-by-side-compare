@@ -31,3 +31,41 @@
   </div>
 </div>
 ```
+
+##Javascript
+*set variables*
+```
+checkR9ID = (document.getElementById('checkR9'));
+checkL9ID = (document.getElementById('checkL9'));
+checkR10ID = (document.getElementById('checkR10'));
+checkL10ID = (document.getElementById('checkL10'));
+```
+
+*create function*
+```
+function compareLR(a, b) {
+    if (a.checked === true) {
+        b.checked = false;            
+    } else if (a.checked === false){
+        b.checked = true;            
+    }
+}
+```
+
+*on click event of each radio button input, pass the declared values from the variables into the function*
+```
+//9th row
+$('#checkR9').click(function () {
+    compareLR(checkR9ID, checkL9ID);
+});
+$('#checkL9').click(function () {
+    compareLR(checkL9ID, checkR9ID);
+});
+//10th row
+$('#checkR10').click(function () {
+    compareLR(checkR10ID, checkL10ID);
+});
+$('#checkL10').click(function () {
+    compareLR(checkL10ID, checkR10ID);
+});
+```
