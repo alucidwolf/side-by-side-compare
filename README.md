@@ -1,8 +1,8 @@
 # side-by-side-compare
 
-Say you want to compare profile information side by side, and then submit the info that is in the checkbox to create a new profile from the two current profiles whose information you chose to keep from each individual profile.
+Say you want to compare the information in two profiles side by side, and then submit the info that is in the checkbox to create a new profile from the chosen information.
 
-Below is some bootstrapped HTML and some javascript that will toggle off/on the checkbox for the item adjacent to the item clicked. See example below. If you click on/off one of the checkboxes, the other one in the row will toggle accoridngly so only 1 is checked at a time.
+Below is some bootstrapped HTML and some Jvascript that will toggle off/on the checkbox for the item adjacent(horizontally) to the item clicked. See example below. If you click on/off one of the checkboxes, the other one in the same row will toggle accoridngly so **only 1 is checked at a time.**
 
 ![alt text](http://i1295.photobucket.com/albums/b638/b2_franklin/compare%20profile_zpsofujeesa.jpg "Example")
 
