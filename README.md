@@ -128,3 +128,8 @@ function getLabelText() {
     }    
 };
 ```
+
+##Improvement thoughts
+Instead of pre-declaring the variables, and then calling the function each time a different buttons is clicked with the different parameters specific to that row, consider using `(this)` to traverse the div row containing both checkboxes that need to be compared to one another. Maybe, put each of the two into an `array` and strip everything except the ID's so they can be targeted ...
+
+Or create an object out of, but then an object will be created each time a checkbox is clicked, there is probably a way to destroy it after it is created and used as a reference in the function to compare a/b.
