@@ -53,7 +53,7 @@ Below is some bootstrapped HTML and some javascript that will toggle off/on the 
                 <div class="container-fluid">
                     <div id="mergeCompare" class="row">
 
-                        @*this is where the text for the checked labels is being copied for user to review  before submitting*@
+                        @*this is where the text for the checked labels is being copied for user to review  before submitting the merge*@
 
                     </div>
                     <div class="prev">
@@ -120,7 +120,7 @@ function getLabelText() {
     
     var mergeCompare = document.getElementById('mergeCompare');
     for (var i = 0; i < array.length; i++) {
-        console.log(array[i]);
+        console.log(array[i]); //so you can see in the console what you are passing into the div created below
         var div = document.createElement('div');
         div.setAttribute('class', 'mmReviewSingle col-xs-12')
         div.innerHTML = (array[i]);
