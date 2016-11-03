@@ -133,3 +133,7 @@ function getLabelText() {
 Instead of pre-declaring the variables, and then calling the function each time a different buttons is clicked with the different parameters specific to that row, consider using `(this)` to traverse the div row containing both checkboxes that need to be compared to one another. Maybe, put each of the two into an `array` and strip everything except the ID's so they can be targeted ...
 
 Or create an object out of, but then an object will be created each time a checkbox is clicked, there is probably a way to destroy it after it is created and used as a reference in the function to compare a/b.
+
+#Create API
+###$ in jQuery is an API
+###make an object, encapsulate all code to be reusable, remove hard coded stuff from dataset and implementation and allow to handle any amount of data so when given data from a business case it can dynamically render it all
