@@ -4,36 +4,38 @@ Say you want to compare the information in two profiles side by side, and then s
 
 Below is some bootstrapped HTML and some Jvascript that will toggle off/on the checkbox for the item adjacent(horizontally) to the item clicked. See example below. If you click on/off one of the checkboxes, the other one in the same row will toggle accoridngly so **only 1 is checked at a time.**
 
+http://codepen.io/theBDank/pen/VmNXzo
+
 ![alt text](http://i1295.photobucket.com/albums/b638/b2_franklin/compare%20profile_zpsofujeesa.jpg "Example")
 
 ##HTML
 *for the input fields*
 ```
-<div class="row">
-  <div class="col-sm-6 mergeLeft">
+<div class="container">
+  <div class="col-sm-6">
       <div class="checkbox">
-          <input name="checkL9" id="checkL9" class="check checkMe" type="checkbox">
-          <label for="checkL9"><span class="boldMe">Profile Complete:</span>80%</label>
+          <input name="checkL9" id="checkL9" type="checkbox">
+          <label for="checkL9">Profile Complete: 80%</label>
       </div>
   </div>
-  <div class="col-sm-6 mergeRight">
+  <div class="col-sm-6">
       <div class="checkbox">
-          <input name="checkR9" id="checkR9" class="check checkMe" type="checkbox">
-          <label for="checkR9"><span class="boldMe">Profile Complete:</span>98%</label>
+          <input name="checkR9" id="checkR9" type="checkbox">
+          <label for="checkR9">Profile Complete: 98%</label>
       </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-6 mergeLeft">
+<div class="container">
+  <div class="col-sm-6">
       <div class="checkbox">
-          <input name="checkL10" id="checkL10" class="check checkMe" type="checkbox">
-          <label for="checkL10"><span class="boldMe">Profile ID:</span>54132132</label>
+          <input name="checkL10" id="checkL10" type="checkbox">
+          <label for="checkL10">Profile ID: 54132132</label>
       </div>
   </div>
-  <div class="col-sm-6 mergeRight">
+  <div class="col-sm-6">
       <div class="checkbox">
-          <input name="checkR10" id="checkR10" class="check checkMe" type="checkbox">
-          <label for="checkR10"><span class="boldMe">Profile ID:</span>8741328</label>
+          <input name="checkR10" id="checkR10" type="checkbox">
+          <label for="checkR10">Profile ID: 8741328</label>
       </div>
   </div>
 </div>
