@@ -11,6 +11,7 @@ http://codepen.io/theBDank/pen/VmNXzo
 ##HTML
 *for the input fields*
 ```
+<div id="manualMerge" class="wrapper">
 <div class="container">
   <div class="col-sm-6">
       <div class="checkbox">
@@ -38,6 +39,28 @@ http://codepen.io/theBDank/pen/VmNXzo
           <label for="checkR10">Profile ID: 8741328</label>
       </div>
   </div>
+  
+  <button type="button" onclick="getLabelText()" class="btn btn-primary" data-toggle="modal" data-target="#manualMergeReviewModal">Review &amp; Merge</button>
+  
+</div>
+</div>
+
+<div class="modal fade" id="manualMergeReviewModal" role="dialog" aria-labelledby="manualMergeReviewModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div id="mergeCompare" class="row"></div>
+                    <div class="prev">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">I need to make more changes</button>
+                    </div>
+                    <div class="next">
+                        <button type="submit" class="btn btn-primary">Merge!</button>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+    </div>
 </div>
 ```
 
